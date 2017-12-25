@@ -16,7 +16,7 @@
 title: OXABLE
 email: mitesh@oxal.org
 description: > # this means to ignore newlines until "baseurl:"
-  "Software consultanct and contracting. We build softwares."
+  "Software consultancy and contracting. We build software that's right for YOU!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 brand_name: OXABLE
