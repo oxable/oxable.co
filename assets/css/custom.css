@@ -98,6 +98,10 @@ body {
   font-family: "Arial";
 }
 
+.section ul li {
+    margin-bottom: 25px;
+}
+
 .ox-footer {
     min-height: 150px;
     font-size: 0.9em;
