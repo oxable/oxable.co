@@ -20,6 +20,7 @@ body {
   width: 100%;
   padding: 10px 10px;
   margin: auto;
+  z-index: 999;
 }
 
 #topnav:after {
@@ -152,6 +153,70 @@ body {
     color: #ffffff;
     text-align: center;
     overflow: hidden;
+}
+
+.client-board * {
+  display: inline-block;
+  font-family: "Arial";
+  text-align: center;
+  vertical-align: middle;
+}
+
+.client-board a {
+  text-decoration: none;
+  border: none;
+}
+
+.client-img {
+    padding-top: 10px;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+}
+
+.client-img-fancy {
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(30%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(30%); /* FF 35+ */
+}
+
+.client-img-fancy:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
+
+.client-img:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
+
+/* Dead Simple Grid (c) 2015 Vladimir Agafonkin */
+
+.row .row { margin:  0 -1.5em; }
+.col      { padding: 0  1.5em; }
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen { 
+  .col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.col33 { 
+    padding: 5px;
+}
+
+@media only screen and (min-width: 30em) {
+  .content { width: 66.66%; }
+  .sidebar { width: 33.33%; }
+  .col33 { width: 33.33%; }
 }
 
 .site-title {
